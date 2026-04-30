@@ -1,0 +1,3 @@
+RDD Task1: 14.3349 sec
+LOOPS Task1: 0.9772 sec
+RDD Task1: 13.7991 sec
