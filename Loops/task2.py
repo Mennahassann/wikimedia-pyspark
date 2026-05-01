@@ -5,7 +5,7 @@ class Task2Loops:
         total_pages_ends_with_img = 0
         not_en_project = 0
         
-        IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".gif", ".svg" ".webp")
+        IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp")
 
         with open(path, "r", encoding="utf-8") as file:
             for line in file:

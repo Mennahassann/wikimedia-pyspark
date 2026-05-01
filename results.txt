@@ -3,21 +3,21 @@ RDD Task1
 Min size: 0
 Max size: 141180155987
 Avg size: 132215.79814237214
-Time: 19.1538 sec
+Time: 19.0159 sec
 
 RDD Task2 
 Total page titles ending with image extensions: 266952
 In English project (en): 55638
 NOT in English project: 211314
-Time: 5.4639 sec
+Time: 5.6835 sec
 
 Loop Task1 
 Min size: 0
 Max size: 141180155987
 Avg size: 132215.79814237313
-Time: 2.3607 sec
+Time: 2.3029 sec
 
 Loop Task2 
-Total pages that end with image extensions: 229044
-Pages that end with image extensions and are not in the 'en' project: 181645
-Time: 2.9044 sec
+Total pages that end with image extensions: 266952
+Pages that end with image extensions and are not in the 'en' project: 211314
+Time: 2.7219 sec
