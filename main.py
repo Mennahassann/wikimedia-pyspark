@@ -2,7 +2,9 @@ from pyspark.sql import SparkSession
 from common.timer import measure
 
 from RDD.task1 import Task1
+from RDD.task2 import Task2MapReduce
 from Loops.task1 import Task1Loops
+from Loops.task2 import Task2Loops
 
 
 if __name__ == "__main__":
@@ -19,8 +21,10 @@ if __name__ == "__main__":
 
     print("\nRDD TASKS:\n")
     measure("RDD Task1", lambda: Task1().run(sc, path))
+    measure("RDD Task2", lambda: Task2MapReduce().run(sc, path))
 
     print("\nLOOP TASKS:\n")
     measure("Loop Task1", lambda: Task1Loops().run(path))
+    measure("Loop Task2", lambda: Task2Loops().run(path))
 
     spark.stop()
