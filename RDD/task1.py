@@ -1,17 +1,18 @@
 from common.parser import parse
 
+
 class Task1:
-
     def run(self, sc, path):
-
         data = sc.textFile(path)
 
         parsed = data.map(parse).filter(lambda x: x is not None)
+        sizes = parsed.map(lambda x: int(x["size"]))
 
-        sizes = parsed.map(lambda x: x["size"])
+        min_size = sizes.min()
+        max_size = sizes.max()
+        avg_size = sizes.mean()
 
-        print("Min size:", sizes.min())
-        print("Max size:", sizes.max())
-        print("Avg size:", sizes.mean())
+        result = f"Min size: {min_size}\nMax size: {max_size}\nAvg size: {avg_size}"
 
-        print(sizes.count())
+        print(result)
+        return result
