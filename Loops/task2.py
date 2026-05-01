@@ -11,7 +11,7 @@ class Task2Loops:
             for line in file:
                 parsed = parse(line)
                 if parsed:
-                    if parsed["title"].lower().endwtih(IMAGE_EXTENSIONS):
+                    if parsed["title"].lower().endswith(IMAGE_EXTENSIONS):
                         total_pages_ends_with_img +=1
                         if parsed["project"] != "en":
                             not_en_project += 1
