@@ -1,0 +1,12 @@
+
+RDD Task1 
+Min size: 0
+Max size: 141180155987
+Avg size: 132215.79814237313
+Time: 5.7202 sec
+
+Loop Task1 
+Min size: 0
+Max size: 141180155987
+Avg size: 132215.79814237313
+Time: 1.8487 sec
