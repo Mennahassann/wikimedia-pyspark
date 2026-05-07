@@ -63,9 +63,10 @@ class LoopTask3:
 
         end_time = time.time()
 
-        print("Top 10 most frequent terms:")
+        result_lines = []
+        result_lines.append("Top 10 most frequent terms:")
 
         for i, (word, count) in enumerate(top10, 1):
-            print(f"{i:2}. {word:<20} {count:>10,}")
+            result_lines.append(f"{i:2}. {word:<20} {count:>10,}")
 
-        return end_time - start_time
+        return "\n".join(result_lines)

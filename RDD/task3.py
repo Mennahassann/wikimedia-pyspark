@@ -15,20 +15,13 @@ class RDDTask3:
                 return []
             
     def run(self, sc, path):
-        start_time = time.time()
-
         rdd = sc.textFile(path)
 
         words_rdd = rdd.flatMap(self.extract_words)
 
-        word_pairs = words_rdd.map(lambda word: (word, 1))
+        word_counts = words_rdd.map(lambda w: (w, 1)) \
+                                .reduceByKey(lambda a, b: a + b)
 
-        word_counts = word_pairs.reduceByKey(lambda a, b: a + b)
-        
         top10 = word_counts.takeOrdered(10, key=lambda x: -x[1])
 
-        print("Top 10 most frequent terms:")
-        for i, (word, count) in enumerate(top10, 1):
-            print(f"{i:2}. {word:<20} {count:>10,}")
-        
-        return time.time() - start_time
+        return top10
