@@ -29,7 +29,7 @@ if __name__ == "__main__":
     measure("RDD Task1", lambda: Task1().run(sc, path))
     measure("Loop Task1", lambda: Task1Loops().run(sc,path))
     measure("RDD Task2", lambda: Task2MapReduce().run(sc, path))
-    measure("Loop Task2", lambda: Task2Loops().run(path))
+    measure("Loop Task2", lambda: Task2Loops().run(sc, path))
     measure("RDD Task3", lambda: RDDTask3().run(sc, path))
     measure("Loop Task3", lambda: LoopTask3().run(sc, path))
     measure("RDD Task4", lambda: Task4RDD().run(sc, path))
