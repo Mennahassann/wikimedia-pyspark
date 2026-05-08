@@ -5,6 +5,8 @@ class Task5:
             parsed = parse(line)
             if parsed:
                 return (parsed["project"], (parsed["title"], parsed["hits"]))
+                # return (parsed["project"].split(".")[0], (parsed["title"], parsed["hits"]))
+            return None 
 
         def get_max_hits(a, b):
             if a[1]>=b[1]:
