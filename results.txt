@@ -5,7 +5,7 @@ Result:
 Min size: 0
 Max size: 141180155987
 Avg size: 132215.79814237313
-Time: 4.7670 sec
+Time: 7.4403 sec
 
 ============================
 Loop Task1
@@ -13,7 +13,7 @@ Result:
 Min size: 0
 Max size: 141180155987
 Avg size: 132215.79814237313
-Time: 3.2065 sec
+Time: 4.1264 sec
 
 ============================
 RDD Task2
@@ -21,14 +21,14 @@ Result:
 Total page titles ending with image extensions: 266952
 In English project (en): 55638
 NOT in English project: 211314
-Time: 3.5754 sec
+Time: 4.4181 sec
 
 ============================
 Loop Task2
 Result:
 Total pages that end with image extensions: 266952
 Pages that end with image extensions and are not in the 'en' project: 211314
-Time: 1.8155 sec
+Time: 5.1068 sec
 
 ============================
 RDD Task3
@@ -43,7 +43,7 @@ Result:
  8. in                       83,470
  9. user                     74,471
 10. entitydata               72,370
-Time: 10.4502 sec
+Time: 19.5871 sec
 
 ============================
 Loop Task3
@@ -59,7 +59,7 @@ Top 10 most frequent terms:
  8. in                       83,470
  9. user                     74,471
 10. entitydata               72,370
-Time: 6.2029 sec
+Time: 13.3567 sec
 
 ============================
 RDD Task4
@@ -71,7 +71,7 @@ Project: es.mw, Total Hits: 695531
 Project: ja.mw, Total Hits: 611443
 Project: de.mw, Total Hits: 572119
 
-Time: 6.2195 sec
+Time: 7.9150 sec
 
 ============================
 Loop Task4
@@ -83,7 +83,7 @@ Project: es.mw, Total Hits: 695531
 Project: ja.mw, Total Hits: 611443
 Project: de.mw, Total Hits: 572119
 
-Time: 1.6538 sec
+Time: 6.4399 sec
 
 ============================
 RDD Task5
@@ -1166,7 +1166,7 @@ Project: zu, Title: Ikhasi_Elikhulu --> Hits: 9
 Project: zu.b, Title: Funda_ukubala_Kahle --> Hits: 1
 Project: zu.d, Title: -banzi --> Hits: 1
 Project: zu.mw, Title: zu --> Hits: 23
-Time: 5.9801 sec
+Time: 6.9433 sec
 
 ============================
 Loop Task5
@@ -2249,4 +2249,4 @@ Project: zu, Title: Ikhasi_Elikhulu --> Hits: 9
 Project: zu.b, Title: Funda_ukubala_Kahle --> Hits: 1
 Project: zu.d, Title: -banzi --> Hits: 1
 Project: zu.mw, Title: zu --> Hits: 23
-Time: 1.6305 sec
+Time: 3.5660 sec

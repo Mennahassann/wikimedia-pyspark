@@ -35,6 +35,6 @@ if __name__ == "__main__":
     measure("RDD Task4", lambda: Task4RDD().run(sc, path))
     measure("Loop Task4", lambda: Task4Loops().run(path))
     measure("RDD Task5", lambda: Task5().run(sc, path))
-    measure("Loop Task5", lambda: Task5Loops().run(path))
+    measure("Loop Task5", lambda: Task5Loops().run(sc, path))
 
     spark.stop()
